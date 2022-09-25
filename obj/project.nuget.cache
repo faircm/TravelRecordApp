@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Pd+UzJjXQGmqJYp1ppR66hpLmalgyaXO/7sVP6e2ZUO/AJhSdiEzO6wOXweD0XgCsgW5/Og2rfEGdYfTNpkYHg==",
+  "dgSpecHash": "VDUUwN9wbx54REV2IS63tFSRub8y85AmErUju+Ph4kf7VUPZgjtf4Pm7JIw+8tnTFk4NK0hxR7XWGJ7YDoQCgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cmfai\\OneDrive\\Desktop\\githubProjects\\TravelRecordApp\\TravelRecordApp\\TravelRecordApp\\TravelRecordApp.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\cmfai\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\cmfai\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\cmfai\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\cmfai\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\cmfai\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2012\\xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
