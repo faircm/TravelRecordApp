@@ -33,5 +33,15 @@ namespace TravelRecordApp
                 historyList.ItemsSource = postList;
             }
         }
+
+        private void historyList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Post selectedPost = (Post)historyList.SelectedItem;
+
+            if (selectedPost != null)
+            {
+                Navigation.PushAsync(new TravelDetailsPage(selectedPost));
+            }
+        }
     }
 }

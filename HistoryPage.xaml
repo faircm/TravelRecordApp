@@ -4,8 +4,8 @@
              x:Class="TravelRecordApp.HistoryPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is the History Page" TextColor="Black" />
-            <ListView x:Name="historyList">
+            <Label Text="This is the History Page" TextColor="White" />
+            <ListView x:Name="historyList" ItemSelected="historyList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Destination}" />

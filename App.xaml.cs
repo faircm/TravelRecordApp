@@ -18,6 +18,10 @@ namespace TravelRecordApp
         public App(string databaseLocation)
         {
             _databaseLocation = databaseLocation;
+
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
