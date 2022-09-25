@@ -38,3 +38,4 @@ C:\Users\cmfai\OneDrive\Desktop\githubProjects\TravelRecordApp\TravelRecordApp\T
 C:\Users\cmfai\OneDrive\Desktop\githubProjects\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\netstandard2.0\TravelRecordApp.pdb
 C:\Users\cmfai\OneDrive\Desktop\githubProjects\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\netstandard2.0\ref\TravelRecordApp.dll
 C:\Users\cmfai\OneDrive\Desktop\githubProjects\TravelRecordApp\TravelRecordApp\TravelRecordApp\bin\Debug\netstandard2.0\ref\TravelRecordApp.dll
+C:\Users\cmfai\OneDrive\Desktop\githubProjects\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\netstandard2.0\TravelDetailsPage.xaml.g.cs

@@ -13,19 +13,33 @@ namespace TravelRecordApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TravelDetailsPage : ContentPage
     {
-        private Post selectedPost;
+        private Post _selectedPost;
 
         public TravelDetailsPage(Post selectedPost)
         {
             InitializeComponent();
 
+            _selectedPost = selectedPost;
             destinationId.Text = selectedPost.Id.ToString();
             destinationLabel.Text = selectedPost.Destination;
         }
 
         private void updateBtn_Clicked(object sender, EventArgs e)
         {
-            selectedPost.Destination = destinationLabel.Text;
+            using (SQLiteConnection conn = new SQLiteConnection(App._databaseLocation))
+            {
+                _selectedPost.Destination = destinationLabel.Text;
+                conn.CreateTable<Post>();
+                
+                if (conn.Update(_selectedPost) > 0)
+                {
+                    DisplayAlert("Success", "Travel record updated successfully", "Ok");
+                }
+                else
+                {
+                    DisplayAlert("Failure", "Travel record could not be updated", "Ok");
+                }
+            }
         }
 
         private void deleteBtn_Clicked(object sender, EventArgs e)
@@ -33,7 +47,7 @@ namespace TravelRecordApp
             using (SQLiteConnection conn = new SQLiteConnection(App._databaseLocation))
             {
                 conn.CreateTable<Post>();
-                if (conn.Delete(selectedPost) > 0)
+                if (conn.Delete(_selectedPost) > 0)
                 {
                     DisplayAlert("Success", "Travel record deleted successfully", "Ok");
                 }
