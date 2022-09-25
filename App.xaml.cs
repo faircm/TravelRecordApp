@@ -6,6 +6,8 @@ namespace TravelRecordApp
 {
     public partial class App : Application
     {
+        public static string _databaseLocation = string.Empty;
+
         public App()
         {
             InitializeComponent();
@@ -15,6 +17,7 @@ namespace TravelRecordApp
 
         public App(string databaseLocation)
         {
+            _databaseLocation = databaseLocation;
         }
 
         protected override void OnStart()

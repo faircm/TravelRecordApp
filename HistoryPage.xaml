@@ -5,6 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="This is the History Page" TextColor="Black" />
+            <ListView x:Name="historyList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Destination}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

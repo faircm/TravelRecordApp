@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SQLite;
+using TravelRecordApp.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,22 @@ namespace TravelRecordApp
         public HistoryPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // Using statement, automatically closes connection after statement ends
+            using (SQLiteConnection conn = new SQLiteConnection(App._databaseLocation))
+            {
+                //
+                conn.CreateTable<Post>();
+
+                // Retrieve table contents, put in list
+                List<Post> postList = conn.Table<Post>().ToList();
+                historyList.ItemsSource = postList;
+            }
         }
     }
 }
