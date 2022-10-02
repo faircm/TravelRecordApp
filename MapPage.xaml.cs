@@ -77,3 +77,8 @@ namespace TravelRecordApp
         }
     }
 }
+
+// FourSquare places API key fsq3jFIsagoVnsr2JxFdfYUlHLwdeeqm2rA3CSFNrHV0Zyk=
+// Client ID BLNKA2NY14AXPHNQU2XPNZOUR5QWJQQV5KLZ5GPEESHKWZBB
+// Client Secret LVCL3AGZRBGOSAQPDA5COG41YWHFUOPVXRPMY2ZGIN1ICBJQ
+// URL: 
